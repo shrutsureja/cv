@@ -14,6 +14,11 @@ export const metadata: Metadata = {
   description: RESUME_DATA.summary,
 };
 
+/**
+ * TODO :
+ * Add Github Logo in the Card so that they can be referenced to the project
+ *
+ */
 export default function Page() {
   return (
     <main className="container relative mx-auto scroll-my-12 overflow-auto p-4 print:p-12 md:p-16">
