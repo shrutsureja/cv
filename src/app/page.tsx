@@ -144,6 +144,14 @@ export default function Page() {
           })}
         </Section>
         <Section>
+          <h2 className="text-xl font-bold">Leadership & Initiatives</h2>
+          <ul className="list-inside list-disc space-y-1 text-pretty font-mono text-sm text-muted-foreground">
+            {RESUME_DATA.leadership.map((item) => (
+              <li key={item}>{item}</li>
+            ))}
+          </ul>
+        </Section>
+        <Section>
           <h2 className="text-xl font-bold">Education</h2>
           {RESUME_DATA.education.map((education) => {
             return (

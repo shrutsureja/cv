@@ -5,14 +5,13 @@ export const RESUME_DATA = {
   initials: "SS",
   location: "Rajkot, Gujarat, India",
   locationLink: "https://www.google.com/maps/place/Rajkot",
-  about:
-    "Software Engineer focused on building projectss with extra attention to detail",
+  about: "Backend Engineer | Go | Distributed Systems",
   summary:
-    "As a Software Engineer, I have successfully taken multiple projects from 0 to 1. Currently, I work mostly with TypeScript, React, Node.js and NextJS.",
+    "Backend Engineer working with Go, RabbitMQ and distributed systems. Currently at Kevit.io, leading the migration of NestJS microservices to Go for an enterprise messaging platform processing ~500 million API calls/month, and building a multi-tenant CRM backend from scratch.",
   avatarUrl: "https://avatars.githubusercontent.com/u/92169549?v=4",
-  personalWebsiteUrl: "https://shrutsureja.me",
+  personalWebsiteUrl: "https://shrutsureja.com",
   contact: {
-    email: "shrutsureja@gmail.com",
+    email: "shrutsureja.work@gmail.com",
     tel: "+918160460050",
     social: [
       {
@@ -35,68 +34,63 @@ export const RESUME_DATA = {
   education: [
     {
       school: "Marwadi University",
-      degree: "Bachelor's Degree in Computer Engineering",
+      degree: "Bachelor's Degree in Computer Engineering (CGPA: 8.99)",
       start: "2021",
       end: "2025",
     },
   ],
   work: [
     {
-      company: "Cygner",
-      link: "https://www.cygner.net/",
+      company: "Kevit.io",
+      link: "https://kevit.io/",
       badges: ["Onsite"],
-      title: "Web Developer Intern",
+      title: "Jr. Software Development Engineer",
       logo: "",
-      start: "3/2025",
-      end: "6/2025",
+      start: "6/2024",
+      end: undefined,
       description:
-        "Implemented new features, led squad, worked on improving the way developers ship the code, started migration from Emotion to Tailwind CSS and more. Technologies: React, TypeScript, GraphQL",
+        "Leading the strategic migration of NestJS microservices to Go for Chatomate, an enterprise messaging platform processing ~500 million API calls/month — achieved a 95% memory reduction and 71% lower peak CPU usage. Architected a multi-tenant CRM backend (LeadMastro) from scratch in Go with RabbitMQ-driven automation and Razorpay subscriptions. Technologies: Go, RabbitMQ, MongoDB, Redis, Postgres, AWS",
     },
   ],
+  leadership: [
+    "Leading AI adoption across the engineering team by identifying and implementing LLM-based tools to optimize development workflows.",
+    "Managed the development of Introo (internal product), providing technical roadmap guidance and direct mentorship to a junior intern.",
+  ],
   skills: [
-    "JavaScript",
+    "Go",
     "TypeScript",
-    "React/Next.js/Remix",
+    "JavaScript",
+    "SQL",
+    "C/C++",
     "Node.js",
+    "RabbitMQ",
+    "Postgres",
+    "Redis",
+    "MongoDB",
+    "GORM",
+    "Gofiber",
+    "Hono",
     "ExpressJS",
     "Cloudflare Workers",
-    "Hono",
-    "SQL",
-    "NoSQL",
-    "C/C++",
+    "AWS (S3, SES, Cognito)",
   ],
   projects: [
     {
-      title: "Maze Game",
-      techStack: [
-        "Side Project",
-        "TypeScript",
-        "ReactJS",
-        "Vite",
-        "REST",
-        "ExpressJS",
-        "Canva",
-      ],
+      title: "Bounty Hook",
+      techStack: ["Open Source", "Cloudflare Workers", "Twitter API", "Hono", "Bun"],
       description:
-        "An interactive maze game where you can play as well as visualise how maze is generated.",
+        "Automated tweets announcing bounty winners chosen by repository admins. Serverless Cloudflare Workers handle bounty triggers from GitHub via Twitter APIs and OAuth2. Received a $50 bounty for the contribution.",
       logo: "",
       link: {
-        label: "maze.shrutsureja.me",
-        href: "https://maze.shrutsureja.me/",
+        label: "github.com/code100x/bounty-hook",
+        href: "https://github.com/code100x/bounty-hook",
       },
     },
     {
-      title: "BharatShamikshak",
-      techStack: [
-        "Hackathon Project",
-        "ReactJS",
-        "Flask",
-        "Langchain",
-        "LlamaCpp",
-        "ChromaDB",
-      ],
+      title: "Maze Game",
+      techStack: ["Side Project", "TypeScript", "ReactJS", "Vite", "ExpressJS"],
       description:
-        "LLM based application which lets users chat, search and explore documents with the help of LLM.",
+        "An interactive maze game where you can play as well as visualise how the maze is generated.",
       logo: "",
       link: {
         label: "maze.shrutsureja.me",
