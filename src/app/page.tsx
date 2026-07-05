@@ -138,6 +138,22 @@ export default function Page() {
                 </CardHeader>
                 <CardContent className="mt-2 text-xs">
                   {work.description}
+                  {"projects" in work ? (
+                    <ul className="mt-3 space-y-3">
+                      {work.projects.map((project) => (
+                        <li key={project.title}>
+                          <a
+                            className="font-semibold text-foreground hover:underline"
+                            href={project.link}
+                            target="_blank"
+                          >
+                            {project.title} ↗
+                          </a>
+                          <p className="mt-1">{project.description}</p>
+                        </li>
+                      ))}
+                    </ul>
+                  ) : null}
                 </CardContent>
               </Card>
             );

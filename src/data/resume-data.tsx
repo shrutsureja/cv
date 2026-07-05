@@ -49,7 +49,21 @@ export const RESUME_DATA = {
       start: "6/2024",
       end: undefined,
       description:
-        "Leading the strategic migration of NestJS microservices to Go for Chatomate, an enterprise messaging platform processing ~500 million API calls/month — achieved a 95% memory reduction and 71% lower peak CPU usage. Architected a multi-tenant CRM backend (LeadMastro) from scratch in Go with RabbitMQ-driven automation and Razorpay subscriptions. Technologies: Go, RabbitMQ, MongoDB, Redis, Postgres, AWS",
+        "Backend engineer working primarily in Go on enterprise messaging and CRM products. Technologies: Go, RabbitMQ, MongoDB, Redis, Postgres, AWS",
+      projects: [
+        {
+          title: "Chatomate (Enterprise Messaging Platform)",
+          link: "https://chatomate.in/",
+          description:
+            "Leading the strategic migration of NestJS microservices to Go for a platform processing ~500 million API calls/month — achieved a 95% baseline memory reduction and 71% lower peak CPU usage. Developed a generic connection manager using Go generics with a 5-state machine, heartbeat monitoring and exponential backoff, plus reusable Go packages (connmgr, logx, mongox, redisx) for the monorepo.",
+        },
+        {
+          title: "LeadMastro (Multi-tenant CRM)",
+          link: "https://leadmastro.com/",
+          description:
+            "Architected a complete multi-tenant CRM backend from scratch in Go with 50+ database models and RBAC-based role management. Built an event-driven automation engine using RabbitMQ with per-tenant queue partitioning, a per-user subscription lifecycle with Razorpay HMAC-verified webhooks, and OAuth 2.0, WhatsApp Business API and AWS (S3, SES, Cognito) integrations.",
+        },
+      ],
     },
   ],
   leadership: [
