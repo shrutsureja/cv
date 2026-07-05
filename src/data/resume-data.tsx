@@ -54,14 +54,21 @@ export const RESUME_DATA = {
         {
           title: "Chatomate (Enterprise Messaging Platform)",
           link: "https://chatomate.in/",
-          description:
-            "Leading the strategic migration of NestJS microservices to Go for a platform processing ~500 million API calls/month — achieved a 95% baseline memory reduction and 71% lower peak CPU usage. Developed a generic connection manager using Go generics with a 5-state machine, heartbeat monitoring and exponential backoff, plus reusable Go packages (connmgr, logx, mongox, redisx) for the monorepo.",
+          highlights: [
+            "Leading the strategic migration of NestJS microservices to Go for a platform processing ~500 million API calls/month.",
+            "Achieved a 95% baseline memory reduction and a 71% reduction in peak CPU usage during k6 stress testing.",
+            "Developed a generic connection manager using Go generics with a 5-state machine, heartbeat monitoring and exponential backoff for MongoDB and Redis.",
+            "Built reusable Go packages (connmgr, logx, mongox, redisx) to standardize production-grade connection management across the monorepo.",
+          ],
         },
         {
           title: "LeadMastro (Multi-tenant CRM)",
           link: "https://leadmastro.com/",
-          description:
-            "Architected a complete multi-tenant CRM backend from scratch in Go with 50+ database models and RBAC-based role management. Built an event-driven automation engine using RabbitMQ with per-tenant queue partitioning, a per-user subscription lifecycle with Razorpay HMAC-verified webhooks, and OAuth 2.0, WhatsApp Business API and AWS (S3, SES, Cognito) integrations.",
+          highlights: [
+            "Architected a complete multi-tenant CRM backend from scratch in Go, with 50+ database models and RBAC-based role management.",
+            "Built an event-driven automation engine using RabbitMQ with a custom worker pool pattern and dynamic per-tenant queue partitioning.",
+            "Designed a per-user subscription lifecycle using Razorpay with HMAC-verified webhooks for 10+ event types; integrated OAuth 2.0, WhatsApp Business API and AWS (S3, SES, Cognito).",
+          ],
         },
       ],
     },

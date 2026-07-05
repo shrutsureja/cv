@@ -149,7 +149,11 @@ export default function Page() {
                           >
                             {project.title} ↗
                           </a>
-                          <p className="mt-1">{project.description}</p>
+                          <ul className="mt-1 list-outside list-disc space-y-1 pl-4">
+                            {project.highlights.map((highlight) => (
+                              <li key={highlight}>{highlight}</li>
+                            ))}
+                          </ul>
                         </li>
                       ))}
                     </ul>
@@ -161,7 +165,7 @@ export default function Page() {
         </Section>
         <Section>
           <h2 className="text-xl font-bold">Leadership & Initiatives</h2>
-          <ul className="list-inside list-disc space-y-1 text-pretty font-mono text-sm text-muted-foreground">
+          <ul className="list-outside list-disc space-y-1 text-pretty pl-4 font-mono text-sm text-muted-foreground">
             {RESUME_DATA.leadership.map((item) => (
               <li key={item}>{item}</li>
             ))}
